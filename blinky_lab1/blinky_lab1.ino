@@ -5,7 +5,7 @@ const int LETTER_GAP = DOT * 3;
 const int WORD_GAP = DOT * 7;    
 
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
@@ -36,15 +36,15 @@ void loop() {
 }
 
 void dot() {
-  digitalWrite(LED_PIN, HIGH);
+  digitalWrite(LED_BUILTIN, HIGH);
   delay(DOT);
-  digitalWrite(LED_PIN, LOW);
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
 void dash() {
-  digitalWrite(LED_PIN, HIGH);
+  digitalWrite(LED_BUILTIN, HIGH);
   delay(DASH);
-  digitalWrite(LED_PIN, LOW);
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
 void gap() {
